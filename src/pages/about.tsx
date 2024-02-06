@@ -1,10 +1,13 @@
 import Layout from "@/components/layout/Layout";
-import { NextPage } from "next";
+import { NextPageAuth } from "@/interfaces/page.interface";
 
-const AboutPage: NextPage = () => {
+
+const AboutPage: NextPageAuth = () => {
    return (
-      <Layout>about</Layout>
+      <Layout title="About">about</Layout>
    )
 }
+
+// AboutPage.isOnlyUser = true
 
 export default AboutPage;
